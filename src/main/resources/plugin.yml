@@ -1,0 +1,9 @@
+name: Testplugin
+version: ${project.version}
+main: com.matumokencave.plugin.test.testplugin.Testplugin
+api-version: 1.12
+authors: [ RooT0616 ]
+description: test
+commands:
+    present:
+        description: 現在時刻の表示
