@@ -1,7 +1,7 @@
 name: Testplugin
 version: ${project.version}
 main: com.matumokencave.plugin.test.testplugin.Testplugin
-api-version: 1.12
+api-version: 1.16
 authors: [ RooT0616 ]
 description: test
 commands:

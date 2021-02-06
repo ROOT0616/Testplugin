@@ -6,6 +6,7 @@ import java.util.Date;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Testplugin extends JavaPlugin {
@@ -15,6 +16,9 @@ public final class Testplugin extends JavaPlugin {
   public void onEnable() {
     // Plugin startup logic
     getLogger().info("プラグインが開始しました");
+		// 他のクラスから登録する場合
+		// コンストラクタで登録する場合
+		new BlockPlace(this);
   }
 
   // コマンド実行処理
@@ -36,6 +40,9 @@ public final class Testplugin extends JavaPlugin {
   // 終了時処理
   @Override
   public void onDisable() {
+		// 特定のイベントだけを解除する場合
+		// 全てのイベントを解除する場合
+		HandlerList.unregisterAll(this);
     // Plugin shutdown logic
     getLogger().info("プラグインが停止しました");
   }
