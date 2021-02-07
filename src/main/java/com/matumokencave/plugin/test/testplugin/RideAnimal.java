@@ -25,10 +25,10 @@ public class RideAnimal implements Listener {
   public void playerentityclicke(PlayerInteractAtEntityEvent e) {
     // クリックしたエンティティ取得
     Entity entity = e.getRightClicked();
+    // エンティティをクリックしたプレイヤー
     Player player = e.getPlayer();
     // Entity entity2 = en.getTarget();
     // if (entity == entity2 ){
-      // エンティティをクリックしたプレイヤー
       // 棒を持っているときのみ
       ItemStack mainHand = player.getInventory().getItemInMainHand();
       if (mainHand.getType() == Material.STICK) {
