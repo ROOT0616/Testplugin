@@ -19,6 +19,7 @@ public final class Testplugin extends JavaPlugin {
 		// 他のクラスから登録する場合
 		// コンストラクタで登録する場合
 		new BlockPlace(this);
+		new RideAnimal(this);
   }
 
   // コマンド実行処理

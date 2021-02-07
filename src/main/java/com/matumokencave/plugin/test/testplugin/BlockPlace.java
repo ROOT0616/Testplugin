@@ -1,8 +1,7 @@
 package com.matumokencave.plugin.test.testplugin;
 
 import org.bukkit.Material;
-import org.bukkit.block.Block;
-import org.bukkit.entity.*;
+import org.bukkit.block.Block;  
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.HandlerList;
@@ -23,8 +22,6 @@ public class BlockPlace implements Listener {
     if (block.getType() == Material.BEDROCK) {
       block.setType(Material.AIR);
     }
-    //パターン２：引数に定数を使う。戻り値はEntityオブジェクトなのでZombieにキャストしている。
-    block.getWorld().spawnEntity(block.getLocation(),EntityType.ZOMBIE);
   }
 
   /**
